@@ -240,7 +240,8 @@ header > div {
   position: relative;
 }
 
-.golden-bear > div:nth-of-type(1) {
+.golden-bear > div:nth-of-type(1),
+.poppy-bear > div:nth-of-type(1) {
   display: flex;
   margin-bottom: 30vh;
 }
@@ -278,6 +279,7 @@ header > div {
   height: auto;
   position: absolute;
   top: 66rem;
+  z-index: 1;
 }
 .golden-bear img:nth-of-type(2) {
   width: 27vw;
@@ -285,13 +287,58 @@ header > div {
   position: absolute;
   top: 85rem;
   right: 17rem;
+  z-index: 1;
 }
 
 /*  ============== POPPY BEAR SECTION ============ */
 
 .poppy-bear {
-  padding-top: 30vh;
+  padding: 50vh 9vw;
   width: 100vw;
+  height: 180vh;
   background-color: white;
   color: black;
+  position: relative;
+}
+
+.poppy-bear img:nth-of-type(1) {
+  width: 55vw;
+  height: auto;
+  position: absolute;
+  top: 80rem;
+  right: 11rem;
+  z-index: 1;
+}
+.poppy-bear img:nth-of-type(2) {
+  width: 27vw;
+  height: auto;
+  position: absolute;
+  top: 100rem;
+  left: 24rem;
+  z-index: 1;
+}
+
+.poppy-bear img:nth-of-type(3) {
+  width: 40rem;
+  height: auto;
+  position: absolute;
+  top: -12rem;
+  right: -12rem;
+  z-index: 1;
+  animation: rotating-font 20s infinite linear;
+}
+
+@keyframes rotating-font {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+/*  ============== GRAY AREA ============ */
+.gray-area {
+  height: 30vh;
+  background-color: #f5f5f5;
 }
