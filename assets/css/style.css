@@ -20,11 +20,16 @@
   --primary-font: "Inter";
   --secondary-font: "Work Sans";
 }
+
 html {
   font-size: 10px;
   font-family: "Work Sans", Helvetica, sans-serif;
   background-color: black;
   color: white;
+}
+
+body {
+  overflow-x: hidden;
 }
 
 button {
@@ -229,7 +234,64 @@ header > div {
 
 /* ========== THE GOLDEN BEAR SECTION ========= */
 .golden-bear {
-  margin-left: 9vw;
+  padding-top: 30vh;
+  margin: 0 9vw;
+  height: 160vh;
+  position: relative;
 }
 
-/* .golden-bear > div:nth-of-type() */
+.golden-bear > div:nth-of-type(1) {
+  display: flex;
+  margin-bottom: 30vh;
+}
+
+.bear-identifier {
+  display: flex;
+  flex-direction: column;
+  gap: 2.3rem;
+  flex: 1;
+}
+
+.bear-identifier > p {
+  font-size: 2rem;
+}
+
+.quote {
+  padding: 4.3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.2rem;
+  flex: 1;
+}
+
+.quote p:nth-of-type(1) {
+  font-size: 2.8rem;
+  line-height: 3.2rem;
+  font-weight: 700;
+}
+.quote p:nth-of-type(2) {
+  font-size: 1.8rem;
+}
+
+.golden-bear img:nth-of-type(1) {
+  width: 55vw;
+  height: auto;
+  position: absolute;
+  top: 66rem;
+}
+.golden-bear img:nth-of-type(2) {
+  width: 27vw;
+  height: auto;
+  position: absolute;
+  top: 85rem;
+  right: 17rem;
+}
+
+/*  ============== POPPY BEAR SECTION ============ */
+
+.poppy-bear {
+  padding-top: 30vh;
+  width: 100vw;
+  background-color: white;
+  color: black;
+}
