@@ -33,6 +33,24 @@ button {
   border: 1px solid #aaa;
   background-color: transparent;
   color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: white;
+  color: black;
+}
+
+h2 {
+  font-size: 8.3rem;
+  font-weight: 700;
+  line-height: 7rem;
+}
+
+h4 {
+  font-size: 1.4rem;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
 }
 
 /* ============= HEADER ============== */
@@ -103,12 +121,6 @@ header > div {
   padding: 17vh 13vw 13vh 0;
 }
 
-h4 {
-  font-size: 1.4rem;
-  font-weight: 400;
-  margin-bottom: 0.5rem;
-}
-
 .stats p {
   line-height: 11rem;
   margin-bottom: 1.7rem;
@@ -128,3 +140,96 @@ h4 {
   bottom: 0rem;
   right: 1vw;
 }
+
+/* ============== ACTION SECTION ========== */
+
+.action {
+  width: 100vw;
+  background-color: white;
+  color: black;
+  padding: 50vh 33vw 31vh 33vw;
+}
+.action > div:nth-of-type(1) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.action h2 {
+  padding: 1rem;
+}
+.action p {
+  font-size: 1.6rem;
+  line-height: 3rem;
+}
+
+.action p:nth-of-type(1) {
+  margin-bottom: 95vh;
+}
+
+.action-images > img:nth-of-type(1),
+.action-images > img:nth-of-type(4),
+.action-images > img:nth-of-type(5) {
+  width: 25vw;
+  height: auto;
+}
+
+.action-images > img:nth-of-type(2),
+.action-images > img:nth-of-type(3),
+.action-images > img:nth-of-type(6) {
+  width: 20vw;
+  height: auto;
+}
+
+.action-images > img:nth-of-type(7) {
+  width: 33vw;
+  height: auto;
+}
+
+/*  ============= ACTION SECTION - POSITIONING OF IMAGES */
+.action {
+  position: relative;
+}
+
+.action-images > img:nth-of-type(1) {
+  position: absolute;
+  top: -6.7rem;
+  right: 11rem;
+}
+.action-images > img:nth-of-type(2) {
+  position: absolute;
+  top: 29rem;
+  left: 5rem;
+}
+.action-images > img:nth-of-type(3) {
+  position: absolute;
+  top: 68rem;
+  right: 0;
+}
+.action-images > img:nth-of-type(4) {
+  position: absolute;
+  top: 88rem;
+  left: 22rem;
+}
+.action-images > img:nth-of-type(5) {
+  position: absolute;
+  top: 107rem;
+  right: 16rem;
+}
+.action-images > img:nth-of-type(6) {
+  position: absolute;
+  top: 137rem;
+  left: 0;
+}
+.action-images > img:nth-of-type(7) {
+  position: absolute;
+  top: 170rem;
+  right: 27rem;
+}
+
+/* ========== THE GOLDEN BEAR SECTION ========= */
+.golden-bear {
+  margin-left: 9vw;
+}
+
+/* .golden-bear > div:nth-of-type() */
