@@ -412,19 +412,32 @@ footer article > p:nth-of-type(2) {
   height: auto;
 }
 
-.date-band {
-  background-color: white;
-  color: black;
-  font-size: 8.8rem;
+.date-band-wrapper {
   position: absolute;
   transform: rotate(45deg);
   top: 20rem;
   right: -50rem;
   padding: 2rem 0;
+  background-color: white;
+}
+
+.date-band {
+  color: black;
+  font-size: 8.8rem;
+  animation: scrolling-date 10s linear infinite alternate;
 }
 
 .date-band span {
   color: transparent;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
+}
+
+@keyframes scrolling-date {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
 }
